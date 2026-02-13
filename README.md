@@ -1,77 +1,78 @@
-# Meeting-Scheduler-Agent
-# 📅 Intelligent Scheduling System
+📅 Intelligent Scheduling System
 
 An intelligent meeting scheduling web application that compresses calendar data and optimizes meeting time selection using preference-based heuristic scoring.
 
 Built using Python and Streamlit.
 
----
+🚀 Project Overview
 
-## 🚀 Project Overview
+This system accepts:
 
-This system takes:
+Working hours
 
-- Working hours  
-- Busy time slots  
-- Meeting duration  
-- User time preference (Morning / Afternoon / Evening)  
+Busy time slots
+
+Meeting duration
+
+Preferred time of day (Morning / Afternoon / Evening)
 
 It then:
 
-1. Compresses overlapping busy intervals  
-2. Calculates available free time slots  
-3. Filters slots based on meeting duration  
-4. Applies preference-based scoring  
-5. Suggests the most optimal meeting time  
+Compresses overlapping busy intervals
 
-The system is designed to reduce computational overhead by compressing calendar intervals before performing optimization, improving scheduling efficiency and reducing latency.
+Calculates available free slots
 
----
+Filters slots based on meeting duration
 
-## 🧠 Key Features
+Applies preference-based scoring
 
-- ✅ Calendar interval compression  
-- ✅ Free slot calculation  
-- ✅ Constraint-based filtering  
-- ✅ Preference-driven optimization  
-- ✅ Alternative meeting suggestions  
-- ✅ Interactive web UI  
+Suggests the optimal meeting time with alternatives
 
----
+The system reduces computational overhead by merging calendar intervals before performing scheduling optimization, improving efficiency and reducing latency.
 
-## 🏗️ Tech Stack
+🧠 Key Features
 
-- **Python**
-- **Streamlit**
-- **datetime module**
-- Interval merging algorithms
-- Heuristic optimization logic
+✅ Calendar interval compression
 
----
+✅ Free slot calculation
 
-## ⚙️ How It Works
+✅ Constraint-based filtering
 
-1. **Interval Compression**
-   - Merges overlapping busy time slots to reduce redundant computations.
+✅ Preference-driven optimization
 
-2. **Free Slot Calculation**
-   - Subtracts busy intervals from working hours.
+✅ Alternative meeting suggestions
 
-3. **Constraint Filtering**
-   - Removes slots shorter than required meeting duration.
+✅ Interactive web interface
 
-4. **Preference Scoring**
-   - Assigns higher scores to slots matching user preference.
+🏗️ Tech Stack
 
-5. **Best Slot Selection**
-   - Selects highest-scoring slot and provides alternatives.
+Python
 
----
+Streamlit
 
-## 🖥️ Run Locally
+datetime module
 
-### 1️⃣ Clone the Repository
+Interval merging algorithms
 
-```bash
-git clone YOUR_REPO_LINK
-cd smart_scheduler
+Heuristic scoring logic
+
+⚙️ How It Works
+1️⃣ Interval Compression
+
+Overlapping busy time slots are merged to reduce redundant calculations.
+
+2️⃣ Free Slot Calculation
+
+Busy intervals are subtracted from working hours to generate available slots.
+
+3️⃣ Constraint Filtering
+
+Slots shorter than the required meeting duration are removed.
+
+4️⃣ Preference Scoring
+
+Time slots matching user preference are given higher scores.
+
+5️⃣ Best Slot Selection
+
+The highest-scoring slot is selected and alternative options are displayed.
